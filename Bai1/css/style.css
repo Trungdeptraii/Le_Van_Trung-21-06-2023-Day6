@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.nav{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.inline{
+    display: flex;
+    position: relative;
+    border: 1px solid #666;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.home{
+    width: 55px;
+}
+.about-us{
+    width: 120px;
+}
+.news{
+    position: relative;
+    width: 120px;
+}
+.portfolio{
+    width: 150px;
+}
+.empty{
+    width: 230px;
+    border: 1px solid #666;
+}
+.icon-first{
+    margin-right: 8px;
+}
+.icon-last{
+    margin-left: 8px;
+}
+.lists-item{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0px 0px;
+    margin: 0px 0px;
+    box-shadow: 0px 0px 2px 2px #b6b5b5;
+    bottom: -165px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 100%;
+    border-bottom: 1px solid #666;
+}
+.lists-item::before{
+    content: '';
+    position: absolute;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -20px;
+    left: 40px;
+}
+.inline:hover .lists-item{
+    display: block;
+    color: #666;
+}
+.inline:hover {
+    background-color: #2da5da;
+    color: white;
+}
+.fa-check{
+    margin-right: 8px;
+}
